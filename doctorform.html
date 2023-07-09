@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Formulario del Especialista</title>
+</head>
+<body>
+    <div class="gocont">
+        <div class="gohello goform">
+
+            <a href="index.html"><div class="gonav">
+                <p>Vuelve al inicio</p>
+            </div></a>
+
+            <a href="doctorlist.html"><div class="gonav">
+                <p>Ver consultorios asignados</p>
+            </div></a>
+
+            <h2>Formulario del Especialista</h2>
+            <form id="doctor_form" >
+
+                <div class="gorow">
+                <label for="topic">Nombres Completos</label>
+                <input id="nombres" type="text" class="validate" value="" required />
+                <i><small>Agrega tus nombres, recuerda iniciar en mayúscula</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Apellidos Completos</label>
+                <input id="apellidos" type="text" class="validate" value="" required />
+                <i><small>Agrega tus apellidos, recuerda iniciar en mayúscula</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Número de Cédula</label>
+                <input id="cedula" type="text" class="validate" value="" required />
+                <i><small>Sin puntos u otro carácter especial; solo números</small></i>
+                </div>
+
+                <div class="gorow">
+                    <label for="lang">Especialidad</label>
+                    <select name="especialidad" id="especialidad">
+                      <option value="medgen">Medicina General</option>
+                      <option value="cardio">Cardiología</option>
+                      <option value="medint">Medicina Interna</option>
+                      <option value="rehfis">Rehabilitación Física</option>
+                      <option value="psicol">Sicología</option>
+                      <option value="odonto">Odontología</option>
+                      <option value="radiol">Radiología</option>
+                    </select>
+                    <i><small>Selecciona la especialidad que atenderás</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Consultorio</label>
+                <input id="consultorio" type="text" class="validate" value="" required />
+                <i><small>Solo en números, en tres cifras</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Correo Electrónico</label>
+                <input id="correo" type="text" class="validate" value="" required />
+                <i><small>Recuerda colocar un formato válido</small></i>
+                </div>
+
+                <button class="button_submit" id="button_submit" type="submit" name="action" >
+                    Asignar consultorio
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="doctorscript.js"></script>
+    <script src="doctorlogic.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.gocont {
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.gohello {
+    margin: 75px;
+    padding: 75px;
+}
+
+.gohello h2 {
+    color: #0B877D;
+    font-size: 36px;
+    width: 50%;
+    padding-bottom: 25px;
+}
+
+.gohello p {
+    font-size: 20px;
+    width: 50%;
+    padding-bottom: 25px;
+}
+
+.golink {
+    display: inline-block;
+    font-size: 0;
+    width: calc(50%-40px);
+    max-width: 450px;
+    margin: 20px;
+    padding: 20px;
+    background: #0B877D;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.golink p {
+    color: white;
+    display: inline-block;
+    width: 70%;
+    font-size: 24px;
+}
+
+.golink img {
+    display: inline-block;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.gofoot {   
+    margin-top: 75px;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.gofoot p {
+    color: #126872;
+    display: block;
+    width: 20%;
+    font-size: 16px;
+}
+
+.gofoot img {
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px 20px;
+}
+
+.gorow {
+    display: block;
+    margin-bottom: 30px;
+    border-left: 5px solid #0B877D;
+    padding-left: 20px;
+}
+
+.goform {
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.gorow label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gorow input {
+    display: block;
+    width: 75%;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.gorow i {
+    font-size: 16px;
+    display: block;
+}
+
+.gonav {
+    background: #0B877D;
+    display: inline-block;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.gonav p {
+    color: white;
+    width: 100%;
+    font-size: 12px;
+}
+
+.gotable {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+
+}
+
+.gotable td, .gotable th {
+    padding: 10px;
+    width: 16%;
+    text-align: left;
+}
+
+.button_submit {
+    background: #0B877D;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 7px;
+}

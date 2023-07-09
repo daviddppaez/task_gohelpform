@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Formulario del Paciente</title>
+</head>
+<body>
+    <div class="gocont">
+        <div class="gohello goform">
+
+            <a href="index.html"><div class="gonav">
+                <p>Vuelve al inicio</p>
+            </div></a>
+
+            <a href="userlist.html"><div class="gonav">
+                <p>Ver pacientes asignados</p>
+            </div></a>
+
+            <h2>Formulario del Paciente</h2>
+            <form id="contact_form">
+
+                <div class="gorow">
+                <label for="topic">Nombres Completos</label>
+                <input id="nombres" type="text" class="validate" value="" required />
+                <i><small>Agrega tus nombres, recuerda iniciar en mayúscula</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Apellidos Completos</label>
+                <input id="apellidos" type="text" class="validate" value="" required />
+                <i><small>Agrega tus apellidos, recuerda iniciar en mayúscula</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Número de Cédula</label>
+                <input id="cedula" type="text" class="validate" value="" required />
+                <i><small>Sin puntos u otro carácter especial; solo números</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Edad</label>
+                <input id="edad" type="text" class="validate" value="" required />
+                <i><small>Solo en números, en dos cifras</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="topic">Número</label>
+                <input id="numero" type="text" class="validate" value="" required />
+                <i><small>Solo en números, recuerda que son 10 números, sin indicativo</small></i>
+                </div>
+
+                <div class="gorow">
+                <label for="lang">Especialidad Requerida</label>
+                <select name="especialidad" id="especialidad">
+                  <option value="medgen">Medicina General</option>
+                  <option value="cardio">Cardiología</option>
+                  <option value="medint">Medicina Interna</option>
+                  <option value="rehfis">Rehabilitación Física</option>
+                  <option value="psicol">Sicología</option>
+                  <option value="odonto">Odontología</option>
+                  <option value="radiol">Radiología</option>
+                </select>
+                <i><small>Selecciona la especialidad que requieres</small></i>
+                </div>
+
+                <button class="button_submit" id="button_submit" type="submit" name="action" >
+                    Solicitar cita
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="logic.js"></script>
+
+</body>
+</html>
